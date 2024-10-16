@@ -1,0 +1,120 @@
+Host file:
+{0: {'bandwidth': [10, 46],
+     'instance_type': 'a100',
+     'ip': '0.0.0.4',
+     'memory': 85899345920,
+     'num_device': 4},
+ 1: {'bandwidth': [10, 50],
+     'instance_type': 't4',
+     'ip': '0.0.0.3',
+     'memory': 16106127360,
+     'num_device': 4}}
+
+Profiled data has been loaded.
+
+UniformPlan(dp=8, pp=1, tp=1, mbs=1, gbs=128)
+time: 5170.045852661133, memory(stage): ['51.88GB']
+
+UniformPlan(dp=8, pp=1, tp=1, mbs=2, gbs=128)
+time: 5120.061683654785, memory(stage): ['59.9GB']
+
+UniformPlan(dp=4, pp=1, tp=2, mbs=1, gbs=128)
+time: 5599.802732467651, memory(stage): ['26.92GB']
+
+UniformPlan(dp=4, pp=1, tp=2, mbs=2, gbs=128)
+time: 5235.779905319214, memory(stage): ['33.18GB']
+
+UniformPlan(dp=4, pp=1, tp=2, mbs=4, gbs=128)
+time: 5108.219289779663, memory(stage): ['47.3GB']
+
+UniformPlan(dp=4, pp=1, tp=2, mbs=8, gbs=128)
+time: 5062.0007038116455, memory(stage): ['67.58GB']
+
+UniformPlan(dp=2, pp=1, tp=4, mbs=1, gbs=128)
+time: 6529.066205024719, memory(stage): ['14.11GB']
+
+UniformPlan(dp=2, pp=1, tp=4, mbs=2, gbs=128)
+time: 5862.432599067688, memory(stage): ['18.32GB']
+
+UniformPlan(dp=2, pp=1, tp=4, mbs=4, gbs=128)
+time: 5455.013394355774, memory(stage): ['24.84GB']
+
+UniformPlan(dp=2, pp=1, tp=4, mbs=8, gbs=128)
+time: 5333.502888679504, memory(stage): ['39.24GB']
+
+UniformPlan(dp=2, pp=1, tp=4, mbs=16, gbs=128)
+time: 5253.599762916565, memory(stage): ['64.28GB']
+
+UniformPlan(dp=4, pp=2, tp=1, mbs=1, gbs=128)
+time: 5806.6301345825195, memory(stage): ['23.83GB', '28.04GB']
+
+UniformPlan(dp=4, pp=2, tp=1, mbs=2, gbs=128)
+time: 5833.390808105469, memory(stage): ['26.79GB', '33.11GB']
+
+UniformPlan(dp=4, pp=2, tp=1, mbs=4, gbs=128)
+time: 5963.6794090271, memory(stage): ['33.31GB', '49.92GB']
+
+UniformPlan(dp=2, pp=2, tp=2, mbs=1, gbs=128)
+time: 6551.4080286026, memory(stage): ['12.55GB', '14.37GB']
+
+UniformPlan(dp=2, pp=2, tp=2, mbs=2, gbs=128)
+time: 6076.225304603577, memory(stage): ['14.36GB', '18.81GB']
+
+UniformPlan(dp=2, pp=2, tp=2, mbs=4, gbs=128)
+time: 6028.45242023468, memory(stage): ['19.87GB', '27.44GB']
+
+UniformPlan(dp=2, pp=2, tp=2, mbs=8, gbs=128)
+time: 6224.525213241577, memory(stage): ['26.48GB', '41.1GB']
+
+UniformPlan(dp=1, pp=2, tp=4, mbs=1, gbs=128)
+time: 7683.549129962921, memory(stage): ['6.66GB', '7.45GB']
+
+UniformPlan(dp=1, pp=2, tp=4, mbs=2, gbs=128)
+time: 6726.231300830841, memory(stage): ['8.19GB', '10.14GB']
+
+UniformPlan(dp=1, pp=2, tp=4, mbs=4, gbs=128)
+time: 6305.326664447784, memory(stage): ['10.61GB', '14.23GB']
+
+UniformPlan(dp=1, pp=2, tp=4, mbs=8, gbs=128)
+time: 6392.503941059113, memory(stage): ['16.0GB', '23.24GB']
+
+UniformPlan(dp=1, pp=2, tp=4, mbs=16, gbs=128)
+time: 6580.030405521393, memory(stage): ['24.97GB', '39.31GB']
+
+UniformPlan(dp=2, pp=4, tp=1, mbs=1, gbs=128)
+time: 7661.071092149486, memory(stage): ['15.73GB', '8.1GB', '8.1GB', '19.95GB']
+
+UniformPlan(dp=2, pp=4, tp=1, mbs=2, gbs=128)
+time: 7665.308219453563, memory(stage): ['17.34GB', '9.45GB', '9.45GB', '23.66GB']
+
+UniformPlan(dp=2, pp=4, tp=1, mbs=4, gbs=128)
+time: 7847.197753450145, memory(stage): ['21.09GB', '12.22GB', '12.22GB', '37.7GB']
+
+UniformPlan(dp=1, pp=4, tp=2, mbs=1, gbs=128)
+time: 8704.468834400177, memory(stage): ['8.42GB', '4.14GB', '4.14GB', '10.23GB']
+
+UniformPlan(dp=1, pp=4, tp=2, mbs=2, gbs=128)
+time: 7906.742775440216, memory(stage): ['9.27GB', '5.09GB', '5.09GB', '13.72GB']
+
+UniformPlan(dp=1, pp=4, tp=2, mbs=4, gbs=128)
+time: 7827.787601947784, memory(stage): ['11.97GB', '7.89GB', '7.89GB', '19.54GB']
+
+UniformPlan(dp=1, pp=4, tp=2, mbs=8, gbs=128)
+time: 8133.285021781921, memory(stage): ['15.24GB', '11.24GB', '11.24GB', '29.87GB']
+
+UniformPlan(dp=1, pp=8, tp=1, mbs=1, gbs=128)
+time: 11335.49565076828, memory(stage): ['11.69GB', '4.05GB', '4.05GB', '4.05GB', '4.05GB', '4.05GB', '4.05GB', '15.9GB']
+
+UniformPlan(dp=1, pp=8, tp=1, mbs=2, gbs=128)
+time: 11206.619465351105, memory(stage): ['12.61GB', '4.73GB', '4.73GB', '4.73GB', '4.73GB', '4.73GB', '4.73GB', '18.94GB']
+
+UniformPlan(dp=1, pp=8, tp=1, mbs=4, gbs=128)
+time: 11318.603956699371, memory(stage): ['14.98GB', '6.11GB', '6.11GB', '6.11GB', '6.11GB', '6.11GB', '6.11GB', '31.58GB']
+
+estimate_cost
+dp, pp, tp, mbs, gbs
+1,4,1,2,8,128,5062.0007038116455
+2,4,1,2,4,128,5108.219289779663
+3,8,1,1,2,128,5120.061683654785
+4,8,1,1,1,128,5170.045852661133
+5,4,1,2,2,128,5235.779905319214
