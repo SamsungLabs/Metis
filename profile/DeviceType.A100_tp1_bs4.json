@@ -1,0 +1,33 @@
+{
+  "model": {
+    "model_name": "GPT3",
+    "num_layers": 10,
+    "parameters": {
+      "total_parameters_bytes": 2405502976,
+      "parameters_per_layer_bytes": [393216000, 202383360, 202383360, 202383360, 202383360, 202383360, 202383360, 202383360, 202383360, 393220096]
+    }
+  },
+  "execution_time": {
+    "total_time_ms": 1187.6213073730469,
+	"forward_backward_time_ms": 1143.9790725708008,
+    "batch_generator_time_ms": 1.0437250137329102,
+    "layernorm_grads_all_reduce_time_ms": 0.02143383026123047,
+    "embedding_grads_all_reduce_time_ms": 0.04825592041015625,
+    "optimizer_time_ms": 39.47432041168213,
+    "layer_compute_total_ms": [
+		 1.0962486267089844,
+         116.56570434570312,
+         116.56570434570312,
+         116.56570434570312,
+         116.56570434570312,
+         116.56570434570312,
+         116.56570434570312,
+         116.56570434570312,
+         116.56570434570312,
+         1.066446304321289]
+  },
+  "execution_memory": {
+    "total_memory": 53120,
+    "layer_memory_total_mb": [7820, 4146,4146,4146,4146,4146,4146,4146,12132]
+  }
+}

@@ -1,7 +1,7 @@
 # Copyright 2024 Samsung Electronics Co., Ltd. All Rights Reserved
 from typing import List
 from itertools import chain
-from hetspeed.search_space.utils import permutations
+from search_space.utils import permutations
 
 
 def permute(s, max_permute_len):
