@@ -1,8 +1,8 @@
 # Copyright 2024 Samsung Electronics Co., Ltd. All Rights Reserved
 from typing import List
 
-from hetspeed.utils import GPUNode, DeviceType
-from hetspeed.utils import parse_hostfile, parse_nodefile
+from utils import GPUNode, DeviceType
+from utils import parse_hostfile, parse_nodefile
 
 
 class GPUCluster:

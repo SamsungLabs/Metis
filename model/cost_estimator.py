@@ -4,13 +4,13 @@ import math
 from functools import reduce
 from typing import List, Dict, Tuple
 
-from hetspeed.arguments import parse_args
-from hetspeed.gpu_cluster import GPUCluster
-from hetspeed.utils import ModelConfig
-from hetspeed.model.utils import partition_layers_by_stage
-from hetspeed.model.cluster_bandwidth import HomoClusterBandwidth, HetClusterBandwidth
-from hetspeed.model.load_balancer import DataLoadBalancer
-from hetspeed.search_space.plan import UniformPlan, InterStagePlan
+from arguments import parse_args
+from gpu_cluster import GPUCluster
+from utils import ModelConfig
+from model.utils import partition_layers_by_stage
+from model.cluster_bandwidth import HomoClusterBandwidth, HetClusterBandwidth
+from model.load_balancer import DataLoadBalancer
+from search_space.plan import UniformPlan, InterStagePlan
 
 
 class CostEstimator(ABC):

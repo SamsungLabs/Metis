@@ -1,6 +1,6 @@
 # Copyright 2024 Samsung Electronics Co., Ltd. All Rights Reserved
-from hetspeed.data_loader import ProfileDataLoader
-from hetspeed.search_space.plan import UniformPlan
+from data_loader import ProfileDataLoader
+from search_space.plan import UniformPlan
 
 
 class EstimateCostValidator:
