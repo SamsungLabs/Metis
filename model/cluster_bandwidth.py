@@ -5,8 +5,8 @@ from collections import defaultdict, Counter
 from typing import Tuple, Dict, List, Optional
 from numpy.typing import NDArray
 
-from hetspeed.gpu_cluster import GPUCluster
-from hetspeed.search_space.plan import InterStagePlan
+from gpu_cluster import GPUCluster
+from search_space.plan import InterStagePlan
 
 class ClusterBandwidth(ABC):
     def __init__(self, gpu_cluster):

@@ -3,11 +3,11 @@ import math
 from collections import Counter
 from typing import List, Dict, Tuple, TYPE_CHECKING
 
-from hetspeed.utils import DeviceType
-from hetspeed.model.load_balancer import DataLoadBalancer
+from utils import DeviceType
+from model.load_balancer import DataLoadBalancer
 
 if TYPE_CHECKING:
-    from hetspeed.search_space.plan import InterStagePlan
+    from search_space.plan import InterStagePlan
 
 
 class StagePerformance:

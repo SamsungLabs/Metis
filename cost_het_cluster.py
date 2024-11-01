@@ -6,15 +6,15 @@ import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from hetspeed.arguments import parse_args
-from hetspeed.data_loader import ProfileDataLoader
-from hetspeed.model.cost_estimator import HeteroCostEstimator
-from hetspeed.model.activation_parameter import GPTActivationAndParam
-from hetspeed.model.device_group import StagePerformance
-from hetspeed.model.load_balancer import LayerLoadBalancer
-from hetspeed.search_space.plan import IntraStagePlanGenerator, InterStagePlanGenerator
-from hetspeed.gpu_cluster import GPUCluster
-from hetspeed.utils import ModelConfig
+from arguments import parse_args
+from data_loader import ProfileDataLoader
+from model.cost_estimator import HeteroCostEstimator
+from model.activation_parameter import GPTActivationAndParam
+from model.device_group import StagePerformance
+from model.load_balancer import LayerLoadBalancer
+from search_space.plan import IntraStagePlanGenerator, InterStagePlanGenerator
+from gpu_cluster import GPUCluster
+from utils import ModelConfig
 
 
 def cost_het_cluster(args: argparse.Namespace, gpu_cluster: GPUCluster, profile_data: Dict, model_config: ModelConfig,

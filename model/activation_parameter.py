@@ -1,5 +1,5 @@
 # Copyright 2024 Samsung Electronics Co., Ltd. All Rights Reserved
-from hetspeed.utils import ModelConfig
+from utils import ModelConfig
 
 
 class GPTActivationAndParam:

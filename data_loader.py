@@ -4,7 +4,7 @@ import os
 import re
 from typing import Dict, Union, List, Tuple
 
-from hetspeed.search_space.plan import UniformPlan
+from search_space.plan import UniformPlan
 
 
 class ProfileDataLoader:

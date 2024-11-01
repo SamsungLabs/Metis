@@ -7,15 +7,15 @@ import sys
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from hetspeed.arguments import parse_args
-from hetspeed.data_loader import ProfileDataLoader
-from hetspeed.gpu_cluster import GPUCluster
-from hetspeed.model.cost_estimator import HomoCostEstimator
-from hetspeed.model.cost_validation import EstimateCostValidator
-from hetspeed.model.activation_parameter import GPTActivationAndParam
-from hetspeed.search_space.plan import UniformPlanGenerator
-from hetspeed.utils import ModelConfig
-from hetspeed.search_space.plan import UniformPlan
+from arguments import parse_args
+from data_loader import ProfileDataLoader
+from gpu_cluster import GPUCluster
+from model.cost_estimator import HomoCostEstimator
+from model.cost_validation import EstimateCostValidator
+from model.activation_parameter import GPTActivationAndParam
+from search_space.plan import UniformPlanGenerator
+from utils import ModelConfig
+from search_space.plan import UniformPlan
 
 
 def cost_homo_cluster(args: argparse.Namespace, gpu_cluster: GPUCluster, cost_estimator: HomoCostEstimator) -> List[Tuple[UniformPlan, float]]:

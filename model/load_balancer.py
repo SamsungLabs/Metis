@@ -4,11 +4,11 @@ import math
 from collections import Counter
 from typing import List, Tuple, Dict, Union, TYPE_CHECKING
 
-from hetspeed.gpu_cluster import GPUCluster
-from hetspeed.utils import DeviceType
+from gpu_cluster import GPUCluster
+from utils import DeviceType
 
 if TYPE_CHECKING:
-    from hetspeed.search_space.plan import InterStagePlan
+    from search_space.plan import InterStagePlan
 
 
 class LayerLoadBalancer:

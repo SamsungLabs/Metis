@@ -4,10 +4,10 @@ from dataclasses import dataclass
 from itertools import permutations
 from typing import List, Tuple, Union
 
-from hetspeed.search_space.device_group import gen_device_group_shapes, gen_dgroups_for_stages_with_variance
-from hetspeed.model.load_balancer import LayerLoadBalancer
-from hetspeed.model.device_group import StagePerformance
-from hetspeed.utils import DeviceType
+from search_space.device_group import gen_device_group_shapes, gen_dgroups_for_stages_with_variance
+from model.load_balancer import LayerLoadBalancer
+from model.device_group import StagePerformance
+from utils import DeviceType
 
 @dataclass
 class UniformPlan:
