@@ -46,7 +46,7 @@ class LayerLoadBalancer:
                 data_load_balancer = DataLoadBalancer(self.profile_data, self.model_config)
                 hetero_bs = data_load_balancer.partition_data(device_types, strategy, gbs // batches)
                 for h_mbs in hetero_bs:
-                    comb_h_mbs = [2 ** j for j in range(int(math.log2(h_mbs)), -1, -1) if h_mbs & 2 ** j]
+                    comb_h_mbs = [2 ** i for i in range(int(math.log2(h_mbs)) if h_mbs != 0 else 0, -1, -1) if h_mbs & 2 ** i]
                     for slice_h_mbs in comb_h_mbs:
                         profile_memory = self.profile_data[f'DeviceType.{device_types[0]}'][f'tp{tp_deg}_bs{slice_h_mbs}']['memory']
                         cur_stage_memory_demand += sum(profile_memory[start_layer_id:end_layer_id]) * mem_coef
